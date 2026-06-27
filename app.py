@@ -85,7 +85,7 @@ def build_rag_pipeline():
     )
 
     llm = ChatGroq(
-        model="llama3-8b-8192",
+        model="qwen/qwen3.6-27b",
         temperature=0.1,
         max_tokens=512
     )
