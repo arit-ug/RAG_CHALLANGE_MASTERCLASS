@@ -1,4 +1,3 @@
-app_code = r'''
 import os
 import streamlit as st
 
@@ -278,9 +277,3 @@ if user_input and pipeline_ready:
         "content": answer,
         "sources": sources if in_scope else [],
     })
-'''.strip()
-
-with open("app.py", "w") as f:
-    f.write(app_code)
-
-print("app.py written successfully!")
